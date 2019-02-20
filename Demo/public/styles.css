@@ -1,0 +1,50 @@
+body{
+    font-family: 'Nunito';
+}
+
+#readings p{
+  padding: 14px 0px;
+  padding-left: 40px;
+  padding-right: 180px;
+  border-bottom: 1px solid #e9e9e9;
+  color: #555;
+}
+
+#readings attr1{
+    margin: 0 200px;
+}
+
+#readings attr2{
+    margin: 0 170px;
+}
+
+#readings attr3{
+    margin: 0 70px;
+}
+
+#readings strong{
+    color: #575ed8;
+}
+
+#max p{
+  color: #fff;
+  margin: 0 50px;
+}
+
+#max attr1{
+    margin: 0 350px;
+}
+
+#max attr2{
+    margin-left: 0 30px;
+}
+
+button{
+    background: #575ed8;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 0 0 2px 2px;
+}

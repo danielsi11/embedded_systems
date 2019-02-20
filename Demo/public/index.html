@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CargoTech</title>  <!--Title of the webpage-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script> <!--load Socket.io module-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>  <!--load module for graph-->
+        <link href="/styles.css" rel="stylesheet" /> <!--CSS file for font styles-->
+        <link rel="icon" type="image/png" href="images/icons/ship.ico"/>  <!--Webpage icon-->
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"> <!--CSS file for the table-->
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+        <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+        <link rel="stylesheet" type="text/css" href="css/util.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <button id="send"></button> <!--create a button-->
+
+        <div class="boxed"> <!--create a box-->
+            <div id="max"></div>  <!--Maximum values will be outputted here-->
+        </div>
+
+        <div class="container-table100">  <!--create a table-->
+            <div class="wrap-table100">
+                <div class="table100 ver1 m-b-110">
+                    <div class="table100-head">
+                        <table>
+                            <thead>
+                                <tr class="row100 head">
+                                    <th class="cell100 column1">Time</th> <!--Column headings-->
+                                    <th class="cell100 column2">Temperature (°C)</th>
+                                    <th class="cell100 column3">Roll (°)</th>
+                                    <th class="cell100 column4">Pitch (°)</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="table100-body js-pscroll">
+                        <table>
+                            <tbody>
+                                <output id="readings"></output> <!--Dynamic table will be outputted here-->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/client.js"></script>  <!--load JS file for client-->
+        <div class="container"><canvas id="tempChart"></canvas></div> <!--create 3 graphs-->
+        <div class="container"><canvas id="rollChart"></canvas></div>
+        <div class="container"><canvas id="pitchChart"></canvas></div>
+        <script src="graph.js"></script>  <!--load JS file for graphs-->
+    </body>
+</html>
