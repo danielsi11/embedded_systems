@@ -12,3 +12,8 @@ This folder contains all the necessary files for a user to subscribe to a topic 
 
 3. Demo
 This folder contains all the necessary files to display the user interface. Node.js and Socket.io are used to create a real-time web connection between the server and the local webpage. Data from the JSON file is processed before displaying in a table and a graph.
+
+
+Coursework 2
+
+File contains the code used for the Mbed microcontroller.
